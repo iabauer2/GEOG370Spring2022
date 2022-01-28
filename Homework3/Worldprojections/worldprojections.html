@@ -9,7 +9,7 @@
     <h1>In this project I learned how to display images in different projections</h1>
     
     <h2 style="color:red">Describe in your own words how you displayed the map in different projections using QGIS</h2>
-    <p>I was able to display the image of the map as different projections in QGIS by first exporting the map as a ESRI shapefile. When exporting, I changed the EPSG of the map to the specific projection desired. After that, I added the graticules and caps via the indicatrix mapper plugin. Lastly, I changed the CRS (coordinate reference system) of the project properties in the bottom right corner, added the description of the EPSG and projection using print layout, and saved the image as a JPEG. </p>
+    <p>I was able to display the image of the map as different projections in QGIS by first exporting the map as a ESRI shapefile. When exporting, I changed the EPSG of the map to the specific projection desired. After that, I added the graticules and caps via the indicatrix mapper plugin which shows distortion. Lastly, I changed the CRS (coordinate reference system) of the project properties in the bottom right corner, added the description of the EPSG and projection using print layout, and saved the image as a JPEG. </p>
     
     <h2>WGS84 Projection</h2>
     <h3>Some observations</h3>
@@ -17,7 +17,7 @@
     <img src="./maps/4326.png" alt="WGS84" width='500px'>
     </a>
     <h2>Aitoff Projection</h2>
-    <h3>Some observations</h3>
+    <h3>The Aitoff projection is a modified azimuthal map projection. It is made by halving the longitudes, and then horizontally stretches the map into a 2:1 ellipse. Therefore, this results in a distortion in the shape of the poles, making it a bad choice for depictions of the artic. It preserves the center of the map, however, making it a good choice for depictions near the equator or prime meridian. The size and disatance are not drastically effected.  </h3>
     <a href="./maps/54043.png">
     <img src="./maps/54043.png" alt="Aitoff" width='500px'>
     </a>
