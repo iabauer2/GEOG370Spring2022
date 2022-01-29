@@ -12,32 +12,32 @@
     <p>I was able to display the image of the map as different projections in QGIS by first exporting the map as a ESRI shapefile. When exporting, I changed the EPSG of the map to the specific projection desired. After that, I added the graticules and caps via the indicatrix mapper plugin which shows distortion. Lastly, I changed the CRS (coordinate reference system) of the project properties in the bottom right corner, added the description of the EPSG and projection using print layout, and saved the image as a JPEG. </p>
     
     <h2>WGS84 Projection</h2>
-    <h3>Some observations</h3>
+    <h3>The WGS84 is a coordinate reference system standard, and the EPSG 4326 was created by the United State's National Geospatial-Intelligence Agency. One advantage is that it preserves the size, shape, and disatnce near the equator. However, the size and shape become distored as you move toward either pole, causing antartcica and the North Pole the become stretched. </h3>
     <a href="./maps/4326.png">
     <img src="./maps/4326.png" alt="WGS84" width='500px'>
     </a>
     <h2>Aitoff Projection</h2>
-    <h3>The Aitoff projection is a modified azimuthal map projection. It is made by halving the longitudes, and then horizontally stretches the map into a 2:1 ellipse. Therefore, this results in a distortion in the shape of the poles, making it a bad choice for depictions of the artic. It preserves the center of the map, however, making it a good choice for depictions near the equator or prime meridian. The size and disatance are not drastically effected.  </h3>
+    <h3>The Aitoff projection is a modified azimuthal map projection. It is made by halving the longitudes, and then horizontally stretches the map into a 2:1 ellipse. Therefore, this results in a distortion in the shape and size near the poles, making it a bad choice for depictions far from the center of the Earth. It preserves the center of the map, however, making it a good choice for depictions near the equator or prime meridian. The disatance is not drastically effected near the prime meridian, but becomes skewed as you move East or West.  </h3>
     <a href="./maps/54043.png">
     <img src="./maps/54043.png" alt="Aitoff" width='500px'>
     </a>
     <h2>Pseudo Mercator Projection</h2>
-    <h3>Some observations</h3>
+    <h3>The pseudo mercator projection is one of the most common projections, and is a varient of the mercator projection. It is commonly used by Google maps and often the standard map used in schools. An advantage is that it does not distort distance, so it was used easily for sailing and navigation prior to GPS. Additionally, the shape of each country is relatively preserved. However, the size of the land masses as you move North and South is largely distorted, causing, for example, Greenland to appear around the same size as Africa, which is misleading. </h3>
     <a href="./maps/3857.png">
     <img src="./maps/3857.png" alt="Pseudo Mercator" width='500px'>
     </a>
-    <h2>Sphere Winkle I Projection</h2>
-    <h3>Some observations</h3>
+    <h2>Sphere Winkel I Projection</h2>
+    <h3>The Winkel I projection was created by German cartographer Oswald Winkel and is a modified azimuthal projection. It was created to equally minimize the distortions of shape, size, and distance. It is often used as the standard map because, although there is some distortion in shape and size, these errors are relatively small, and compared to many other maps it has little distortion overall. </h3>
     <a href="./maps/53018.png">
-    <img src="./maps/53018.png" alt="Sphere Winkle I" width='500px'>
+    <img src="./maps/53018.png" alt="Sphere Winkel I" width='500px'>
     </a>
     <h2>World Cylindrical Equal Area Projection</h2>
-    <h3>Some observations</h3>
+    <h3>This is a cylindrical projection. One advantage is that it preserves the sizes of most regions relatively well due to the formula of the projection, however as a consequence the shape is largely distored. Additionally, the distance is stretched from East to West, however this is not as large of a distortion as the distortion of the shape.</h3>
     <a href="./maps/54034.png">
     <img src="./maps/54034.png" alt="World Cylindrical" width='500px'>
     </a>
     <h2>World Equidistant Conic Projection</h2>
-    <h3>Some observations</h3>
+    <h3>This is a simple conic projection, and is very useful for displaying small areas, especially near the equator because of the small amount of distortion in shape, size, and distance there. Additionally, it is a good depiction of regions that are stretched from the East to the West, such as the United States. However, the far South is hugely distored in size, shape, and distance, making it a poor choice for any large scale map.</h3>
     <a href="./maps/54027.png">
     <img src="./maps/54027.png" alt="World Equidistant Conic" width='500px'>
     </a>
