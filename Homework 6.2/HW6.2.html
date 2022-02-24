@@ -7,22 +7,24 @@
     <title>Homework 6.2</title>
 </head>
 <body>
-    <h2>Equal Area Map</h2>
-    <h3>Equal area classification divides the data into equally sized classes. This classification is best used for continuous datasets since it creates a legend that is easily read and interpreted. A downside, however, is that for some datasets, the data will only fall into one or two categories, which would not be very useful when viewing. I chose equal area because I wanted to present the data simply, however, the ratio needed to be very high in order for any changes in color to be present, which is why the ratio of 15 was chosen. </h3>
-    <a href="./Part 2/equal area map.png">
-    <img src="./Part 2/equal area map.png" alt="WGS84" width='1000px'>
+    <h3>The following maps show the number of uninsured people per county in Nebraska. The ratio for each county in each map is the number of uninsured people in that county divided by the population, which more accurately shows the rates of uninsurance.</h3>
+    
+    <h2>Equal Interval Map</h2>
+    <h3>Equal area classification divides the data into equally sized classes. This classification is best used for continuous datasets since it creates a legend that is easily read and interpreted. A downside, however, is that for some datasets, the data will only fall into one or two categories, which would not be very useful when viewing. I chose equal area because I wanted to present the data simply, however, the ratio needed to be very high in order for any changes in color to be present, which is why 5 classes were chosen. </h3>
+    <a href="./Part 2/equal interval.png">
+    <img src="./Part 2/equal interval.png" alt="WGS84" width='1000px'>
     </a>
 
     <h2>Equal Count (Quantile) Map</h2>
-    <h3>Quantile classification divides equal values of observations into a seperate class and is best for when there is a large range of data. One advantage is that it easily represents the position of a data value in the dataset. A disadvantage is that a two values in the same class can have very different values. I chose quantile because it would eliminate the problem with equal area (many white spaces) and really show the spread of the data. A ratio of 10 was chosen because there it divides the 93 counties relatively evenly while still making sure that each color is discernible.</h3>
-    <a href="./Part 2/equal count (quantile) map.png">
-    <img src="./Part 2/equal count (quantile) map.png" alt="WGS84" width='1000px'>
+    <h3>Quantile classification divides equal values of observations into a seperate class and is best for when there is a large range of data. One advantage is that it easily represents the position of a data value in the dataset. A disadvantage is that a two values in the same class can have very different values. I chose quantile because it would eliminate the problem with equal area (many white spaces) and really show the spread of the data. 10 classes were chosen because it divides the 93 counties relatively evenly while still making sure that each color is discernible.</h3>
+    <a href="./Part 2/equal count (quantile).png">
+    <img src="./Part 2/equal count (quantile).png" alt="WGS84" width='1000px'>
     </a>
 
     <h2>Logarithmic Scale Map</h2>
-    <h3>The logarithmic scale classification is best used for representing abnormally distributed continous data. An advantage is that it can be used to represent data that has an strange or extreme distribution (as is the case with this map) and highlights datapoints that have lower values, but a disadvantage is that it groups together higher values and exagerates lower values, which can be misleading. I chose this classification because the data for Nebraska is very isolated - not many uninsured people in most counties, but many uninsured people in others. A ratio of 8 was chosen because many counties have similar values, so the colors began to blend together with a higher ratio. </h3>
-    <a href="./Part 2/logarithmic scale map.png">
-    <img src="./Part 2/logarithmic scale map.png" alt="WGS84" width='1000px'>
+    <h3>The logarithmic scale classification is best used for representing abnormally distributed continous data. An advantage is that it can be used to represent data that has an strange or extreme distribution (as is the case with this map) and highlights datapoints that have lower values, but a disadvantage is that it groups together higher values and exagerates lower values, which can be misleading. I chose this classification because the data for Nebraska is very isolated - not many uninsured people in most counties, but many uninsured people in others. 8 classes were chosen because many counties have similar values, so the colors began to blend together with a higher ratio. </h3>
+    <a href="./Part 2/logarithmic map.png">
+    <img src="./Part 2/logarithmic map.png" alt="WGS84" width='1000px'>
     </a>
 
 </body>
